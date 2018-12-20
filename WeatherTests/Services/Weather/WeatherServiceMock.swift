@@ -10,12 +10,21 @@ import Foundation
 @testable import Weather
 
 final class WeatherServiceMock {
+    var fetchResponse: WeatherServiceResult?
     
+    func simulateSuccessfulResponse() {
+        let entity = WeatherEntity.random()
+        fetchResponse = WeatherServiceResult.success(entity)
+    }
+    
+    func simulateFailedResponse() {
+        fetchResponse = WeatherServiceResult.error
+    }
 }
 
 extension WeatherServiceMock: WeatherServiceProtocol {
-
     func fetch(from location: LocationCoordinatesEntity, completionHandler: @escaping CompletionHandler) {
-        
+        guard let fetchResponse = fetchResponse else {return}
+        completionHandler(fetchResponse)
     }
 }

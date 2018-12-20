@@ -38,6 +38,16 @@
 		43D89FE821CC290900EF8287 /* LocationViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D89FE721CC290900EF8287 /* LocationViewMock.swift */; };
 		43D89FEB21CC2A8600EF8287 /* LocationPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D89FEA21CC2A8600EF8287 /* LocationPresentationModel.swift */; };
 		43D89FED21CC30E400EF8287 /* LocationViewControllerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D89FEC21CC30E400EF8287 /* LocationViewControllerTestCase.swift */; };
+		43D89FF021CC330000EF8287 /* WeatherPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D89FEF21CC330000EF8287 /* WeatherPresentationModel.swift */; };
+		43D89FF221CC332000EF8287 /* WeatherContentPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D89FF121CC332000EF8287 /* WeatherContentPresentationModel.swift */; };
+		43D89FF421CC334900EF8287 /* WeatherErrorPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D89FF321CC334900EF8287 /* WeatherErrorPresentationModel.swift */; };
+		43D89FF721CC338200EF8287 /* WeatherPresentationModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D89FF621CC338200EF8287 /* WeatherPresentationModelFactory.swift */; };
+		43D89FFB21CC33C100EF8287 /* WeatherPresentationModelFactoryTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D89FFA21CC33C100EF8287 /* WeatherPresentationModelFactoryTestCase.swift */; };
+		43D89FFE21CC348000EF8287 /* WeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D89FFD21CC348000EF8287 /* WeatherPresenter.swift */; };
+		43D8A00121CC34EE00EF8287 /* WeatherPresenterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8A00021CC34EE00EF8287 /* WeatherPresenterTestCase.swift */; };
+		43D8A00421CC36D000EF8287 /* WeatherViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8A00321CC36D000EF8287 /* WeatherViewMock.swift */; };
+		43D8A00621CC38C500EF8287 /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8A00521CC38C500EF8287 /* WeatherContentView.swift */; };
+		43D8A00821CC398B00EF8287 /* WeatherViewControllerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8A00721CC398B00EF8287 /* WeatherViewControllerTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +117,16 @@
 		43D89FE721CC290900EF8287 /* LocationViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewMock.swift; sourceTree = "<group>"; };
 		43D89FEA21CC2A8600EF8287 /* LocationPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPresentationModel.swift; sourceTree = "<group>"; };
 		43D89FEC21CC30E400EF8287 /* LocationViewControllerTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewControllerTestCase.swift; sourceTree = "<group>"; };
+		43D89FEF21CC330000EF8287 /* WeatherPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresentationModel.swift; sourceTree = "<group>"; };
+		43D89FF121CC332000EF8287 /* WeatherContentPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentPresentationModel.swift; sourceTree = "<group>"; };
+		43D89FF321CC334900EF8287 /* WeatherErrorPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherErrorPresentationModel.swift; sourceTree = "<group>"; };
+		43D89FF621CC338200EF8287 /* WeatherPresentationModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresentationModelFactory.swift; sourceTree = "<group>"; };
+		43D89FFA21CC33C100EF8287 /* WeatherPresentationModelFactoryTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresentationModelFactoryTestCase.swift; sourceTree = "<group>"; };
+		43D89FFD21CC348000EF8287 /* WeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresenter.swift; sourceTree = "<group>"; };
+		43D8A00021CC34EE00EF8287 /* WeatherPresenterTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresenterTestCase.swift; sourceTree = "<group>"; };
+		43D8A00321CC36D000EF8287 /* WeatherViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewMock.swift; sourceTree = "<group>"; };
+		43D8A00521CC38C500EF8287 /* WeatherContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
+		43D8A00721CC398B00EF8287 /* WeatherViewControllerTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewControllerTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,6 +434,9 @@
 		43D89FC321CC1E2500EF8287 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				43D89FFC21CC346F00EF8287 /* Presenter */,
+				43D89FF521CC337A00EF8287 /* Factory */,
+				43D89FEE21CC32F500EF8287 /* Models */,
 				43D89FC421CC1E2C00EF8287 /* Views */,
 			);
 			path = Weather;
@@ -423,6 +446,7 @@
 			isa = PBXGroup;
 			children = (
 				43D89FC521CC1E3900EF8287 /* WeatherViewController.swift */,
+				43D8A00521CC38C500EF8287 /* WeatherContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -447,6 +471,7 @@
 		43D89FCF21CC229400EF8287 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				43D89FF821CC33AE00EF8287 /* Weather */,
 				43D89FD021CC229900EF8287 /* Location */,
 			);
 			path = GUI;
@@ -535,6 +560,67 @@
 				43D89FEA21CC2A8600EF8287 /* LocationPresentationModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		43D89FEE21CC32F500EF8287 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43D89FEF21CC330000EF8287 /* WeatherPresentationModel.swift */,
+				43D89FF121CC332000EF8287 /* WeatherContentPresentationModel.swift */,
+				43D89FF321CC334900EF8287 /* WeatherErrorPresentationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43D89FF521CC337A00EF8287 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				43D89FF621CC338200EF8287 /* WeatherPresentationModelFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		43D89FF821CC33AE00EF8287 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				43D8A00221CC36C400EF8287 /* Views */,
+				43D89FFF21CC34E000EF8287 /* Presenter */,
+				43D89FF921CC33B500EF8287 /* Factory */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		43D89FF921CC33B500EF8287 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				43D89FFA21CC33C100EF8287 /* WeatherPresentationModelFactoryTestCase.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		43D89FFC21CC346F00EF8287 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				43D89FFD21CC348000EF8287 /* WeatherPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		43D89FFF21CC34E000EF8287 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				43D8A00021CC34EE00EF8287 /* WeatherPresenterTestCase.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		43D8A00221CC36C400EF8287 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43D8A00321CC36D000EF8287 /* WeatherViewMock.swift */,
+				43D8A00721CC398B00EF8287 /* WeatherViewControllerTestCase.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -670,17 +756,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				43D89FB721CC1C8700EF8287 /* NetworkServiceError.swift in Sources */,
+				43D89FF721CC338200EF8287 /* WeatherPresentationModelFactory.swift in Sources */,
+				43D89FF021CC330000EF8287 /* WeatherPresentationModel.swift in Sources */,
 				43D89FBC21CC1CE700EF8287 /* WeatherService.swift in Sources */,
 				43D89FCB21CC215300EF8287 /* LocationErrorPresentationModel.swift in Sources */,
 				43D89FE221CC282F00EF8287 /* LocationPresenter.swift in Sources */,
+				43D89FF421CC334900EF8287 /* WeatherErrorPresentationModel.swift in Sources */,
 				43D89FB321CC1C4400EF8287 /* NetworkService.swift in Sources */,
 				43D89F6521CC169B00EF8287 /* LocationViewController.swift in Sources */,
 				43D89FDB21CC259E00EF8287 /* LocationCoordinator.swift in Sources */,
 				43D89FCE21CC219500EF8287 /* LocationPresentationModelFactory.swift in Sources */,
 				43D89FC921CC211C00EF8287 /* LocationPresentationModel.swift in Sources */,
+				43D89FF221CC332000EF8287 /* WeatherContentPresentationModel.swift in Sources */,
 				43D89FA621CC1A2200EF8287 /* WeatherEntity.swift in Sources */,
 				43D89F6321CC169B00EF8287 /* AppDelegate.swift in Sources */,
 				43D89FBA21CC1CB900EF8287 /* WeatherServiceResult.swift in Sources */,
+				43D89FFE21CC348000EF8287 /* WeatherPresenter.swift in Sources */,
+				43D8A00621CC38C500EF8287 /* WeatherContentView.swift in Sources */,
 				43D89FC221CC1E0F00EF8287 /* NavigationController.swift in Sources */,
 				43D89FAD21CC1BA600EF8287 /* LocationCoordinatesEntity.swift in Sources */,
 				43D89FB521CC1C7700EF8287 /* NetworkServiceResponse.swift in Sources */,
@@ -693,13 +785,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				43D89FEB21CC2A8600EF8287 /* LocationPresentationModel.swift in Sources */,
+				43D89FFB21CC33C100EF8287 /* WeatherPresentationModelFactoryTestCase.swift in Sources */,
 				43D89FB021CC1BD800EF8287 /* LocationCoordinatesEntity.swift in Sources */,
+				43D8A00421CC36D000EF8287 /* WeatherViewMock.swift in Sources */,
 				43D89FED21CC30E400EF8287 /* LocationViewControllerTestCase.swift in Sources */,
+				43D8A00821CC398B00EF8287 /* WeatherViewControllerTestCase.swift in Sources */,
 				43D89FAA21CC1AC200EF8287 /* WeatherEntity.swift in Sources */,
 				43D89FD321CC22B000EF8287 /* LocationPresentationModelFactoryTestCase.swift in Sources */,
 				43D89FE521CC28B000EF8287 /* LocationPresenterTestCase.swift in Sources */,
 				43D89FD921CC258400EF8287 /* LocationCoordinatorTestCase.swift in Sources */,
 				43D89FDF21CC262A00EF8287 /* WeatherServiceMock.swift in Sources */,
+				43D8A00121CC34EE00EF8287 /* WeatherPresenterTestCase.swift in Sources */,
 				43D89FE821CC290900EF8287 /* LocationViewMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

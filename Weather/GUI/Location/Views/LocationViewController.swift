@@ -38,7 +38,7 @@ final class LocationViewController: UIViewController {
     
     @IBAction func userDidTapButton(_ sender: Any) {
         presenter.seeWeather(latitude: latitudeTextField.text ?? "", longitude: longitudeTextField.text ?? "")
-    }    
+    }
 }
 
 extension LocationViewController: LocationView {

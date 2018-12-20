@@ -25,6 +25,7 @@ final class LocationCoordinator {
     /// - Parameter location: Given location.
     func showWeather(at location: LocationCoordinatesEntity) {
         let viewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "WeatherViewController") as! WeatherViewController
+        viewController.presenter = WeatherPresenter(location: location, weatherService: weatherService)
         navigationController?.pushViewController(viewController, animated: true)
     }
     
