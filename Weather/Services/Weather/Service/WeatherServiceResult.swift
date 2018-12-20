@@ -12,4 +12,9 @@ import Foundation
 enum WeatherServiceResult {
     case success(WeatherEntity)
     case error
+    
+    var data: WeatherEntity? {
+        guard case .success(let entity) = self else { return nil }
+        return entity
+    }
 }
