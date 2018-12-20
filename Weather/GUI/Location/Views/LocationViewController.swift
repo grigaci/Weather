@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LocationViewController.swift
 //  Weather
 //
 //  Created by Bogdan Iusco on 12/20/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class LocationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
