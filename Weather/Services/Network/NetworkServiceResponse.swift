@@ -12,4 +12,9 @@ import Foundation
 enum NetworkServiceResponse<ResponseObject> {
     case success(ResponseObject)
     case error(NetworkServiceError)
+    
+    var object: ResponseObject? {
+        guard case .success(let data) = self else {return nil}
+        return data
+    }
 }

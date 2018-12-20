@@ -48,6 +48,7 @@
 		43D8A00421CC36D000EF8287 /* WeatherViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8A00321CC36D000EF8287 /* WeatherViewMock.swift */; };
 		43D8A00621CC38C500EF8287 /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8A00521CC38C500EF8287 /* WeatherContentView.swift */; };
 		43D8A00821CC398B00EF8287 /* WeatherViewControllerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8A00721CC398B00EF8287 /* WeatherViewControllerTestCase.swift */; };
+		43D8A00B21CC3DEE00EF8287 /* NetworkServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8A00A21CC3DEE00EF8287 /* NetworkServiceTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		43D8A00321CC36D000EF8287 /* WeatherViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewMock.swift; sourceTree = "<group>"; };
 		43D8A00521CC38C500EF8287 /* WeatherContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
 		43D8A00721CC398B00EF8287 /* WeatherViewControllerTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewControllerTestCase.swift; sourceTree = "<group>"; };
+		43D8A00A21CC3DEE00EF8287 /* NetworkServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +518,7 @@
 		43D89FDC21CC261700EF8287 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				43D8A00921CC3DD900EF8287 /* Network */,
 				43D89FDD21CC261B00EF8287 /* Weather */,
 			);
 			path = Services;
@@ -621,6 +624,14 @@
 				43D8A00721CC398B00EF8287 /* WeatherViewControllerTestCase.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		43D8A00921CC3DD900EF8287 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				43D8A00A21CC3DEE00EF8287 /* NetworkServiceTestCase.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -784,6 +795,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D8A00B21CC3DEE00EF8287 /* NetworkServiceTestCase.swift in Sources */,
 				43D89FEB21CC2A8600EF8287 /* LocationPresentationModel.swift in Sources */,
 				43D89FFB21CC33C100EF8287 /* WeatherPresentationModelFactoryTestCase.swift in Sources */,
 				43D89FB021CC1BD800EF8287 /* LocationCoordinatesEntity.swift in Sources */,
