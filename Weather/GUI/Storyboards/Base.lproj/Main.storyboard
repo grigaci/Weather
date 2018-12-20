@@ -14,13 +14,66 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="LocationViewController" id="BYZ-38-t0r" customClass="LocationViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="OlO-La-JRf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GX-aQ-RhD">
+                                <rect key="frame" x="16" y="164" width="155.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiK-0g-cly">
+                                <rect key="frame" x="16" y="201" width="155.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLB-XK-Tjh" userLabel="Latitude Text Field">
+                                <rect key="frame" x="171.5" y="155" width="187.5" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="latitude_text_field" label="Latitude"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="luQ-og-cuc" userLabel="Longitude Text Field">
+                                <rect key="frame" x="171.5" y="192" width="187.5" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="longitude_text_field" label="Longitude"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOa-Oh-nSR">
+                                <rect key="frame" x="144.5" y="318.5" width="86" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="see_weather_button" label="See weather"/>
+                                <state key="normal" title="See weather"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="8GX-aQ-RhD" firstAttribute="leading" secondItem="RGc-1u-m0G" secondAttribute="leading" constant="16" id="7XB-Ex-z59"/>
+                            <constraint firstItem="zOa-Oh-nSR" firstAttribute="centerX" secondItem="OlO-La-JRf" secondAttribute="centerX" id="7bV-q2-Bgh"/>
+                            <constraint firstItem="WLB-XK-Tjh" firstAttribute="leading" secondItem="8GX-aQ-RhD" secondAttribute="trailing" id="9dF-O4-KVs"/>
+                            <constraint firstItem="WLB-XK-Tjh" firstAttribute="bottom" secondItem="8GX-aQ-RhD" secondAttribute="bottom" id="HKz-de-3Ks"/>
+                            <constraint firstItem="RGc-1u-m0G" firstAttribute="trailing" secondItem="luQ-og-cuc" secondAttribute="trailing" constant="16" id="NPD-MI-3ut"/>
+                            <constraint firstItem="luQ-og-cuc" firstAttribute="leading" secondItem="tiK-0g-cly" secondAttribute="trailing" id="Oyt-Zs-Hft"/>
+                            <constraint firstItem="WLB-XK-Tjh" firstAttribute="width" secondItem="OlO-La-JRf" secondAttribute="width" multiplier="0.5" id="Yao-rJ-ykO"/>
+                            <constraint firstItem="8GX-aQ-RhD" firstAttribute="top" secondItem="RGc-1u-m0G" secondAttribute="top" constant="100" id="aUK-e6-Oqa"/>
+                            <constraint firstItem="tiK-0g-cly" firstAttribute="top" secondItem="8GX-aQ-RhD" secondAttribute="bottom" constant="16" id="nCP-aa-dei"/>
+                            <constraint firstItem="luQ-og-cuc" firstAttribute="bottom" secondItem="tiK-0g-cly" secondAttribute="bottom" id="rLF-wF-fDW"/>
+                            <constraint firstItem="luQ-og-cuc" firstAttribute="width" secondItem="OlO-La-JRf" secondAttribute="width" multiplier="0.5" id="vLj-7O-zec"/>
+                            <constraint firstItem="RGc-1u-m0G" firstAttribute="trailing" secondItem="WLB-XK-Tjh" secondAttribute="trailing" constant="16" id="vUZ-sC-D0S"/>
+                            <constraint firstItem="tiK-0g-cly" firstAttribute="leading" secondItem="8GX-aQ-RhD" secondAttribute="leading" id="x7z-Co-5fU"/>
+                            <constraint firstItem="zOa-Oh-nSR" firstAttribute="centerY" secondItem="OlO-La-JRf" secondAttribute="centerY" id="xIy-r3-bg7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RGc-1u-m0G"/>
                     </view>
                     <navigationItem key="navigationItem" title="Location" id="6yp-Ua-enN"/>
+                    <connections>
+                        <outlet property="latitudeTextField" destination="WLB-XK-Tjh" id="mJo-4r-OPA"/>
+                        <outlet property="longitudeTextField" destination="luQ-og-cuc" id="5TK-QE-aTe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
