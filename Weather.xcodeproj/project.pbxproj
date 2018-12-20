@@ -14,6 +14,8 @@
 		43D89F6D21CC169D00EF8287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D89F6B21CC169D00EF8287 /* LaunchScreen.storyboard */; };
 		43D89F7821CC169D00EF8287 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D89F7721CC169D00EF8287 /* WeatherTests.swift */; };
 		43D89F8321CC169E00EF8287 /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D89F8221CC169E00EF8287 /* WeatherUITests.swift */; };
+		43D89FA121CC197E00EF8287 /* SnapshotTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D89FA021CC197E00EF8287 /* SnapshotTesting.framework */; };
+		43D89FA321CC199700EF8287 /* SnapshotTesting.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43D89FA021CC197E00EF8287 /* SnapshotTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		43D89FA221CC198D00EF8287 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				43D89FA321CC199700EF8287 /* SnapshotTesting.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		43D89F5F21CC169B00EF8287 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D89F6221CC169B00EF8287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +62,7 @@
 		43D89F7E21CC169D00EF8287 /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D89F8221CC169E00EF8287 /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
 		43D89F8421CC169E00EF8287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D89FA021CC197E00EF8287 /* SnapshotTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapshotTesting.framework; path = Carthage/Build/iOS/SnapshotTesting.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D89FA121CC197E00EF8287 /* SnapshotTesting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,7 @@
 				43D89F7621CC169D00EF8287 /* WeatherTests */,
 				43D89F8121CC169E00EF8287 /* WeatherUITests */,
 				43D89F6021CC169B00EF8287 /* Products */,
+				43D89F9F21CC197E00EF8287 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -237,6 +255,14 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		43D89F9F21CC197E00EF8287 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43D89FA021CC197E00EF8287 /* SnapshotTesting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,6 +273,7 @@
 				43D89F5B21CC169B00EF8287 /* Sources */,
 				43D89F5C21CC169B00EF8287 /* Frameworks */,
 				43D89F5D21CC169B00EF8287 /* Resources */,
+				43D89FA221CC198D00EF8287 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -583,6 +610,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48K763MAMN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WeatherTests/Resources/Info/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -604,6 +635,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48K763MAMN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WeatherTests/Resources/Info/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
